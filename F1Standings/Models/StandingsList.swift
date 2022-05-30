@@ -16,7 +16,7 @@ struct TopLevelDictionary: Decodable {
 
 struct ResponseDetails: Decodable {
     enum CodingKeys: String, CodingKey {
-        case standings = "StandingTable"
+        case standings = "StandingsTable"
     }
     let standings: Standings
 }

@@ -8,11 +8,6 @@
 import Foundation
 
 class F1NetworkService {
-    /// Shared instance
-    let shared = F1NetworkService()
-    
-    /// SOT
-    var driverStandings: DriverStandings?
     private let baseURL = "http://ergast.com/api/f1"
     
     /// CRUD
@@ -45,9 +40,9 @@ class F1NetworkService {
                 let driverStandings = topLevel.mrdata.standings.list.first
                 completion(driverStandings)
             } catch {
-                print(error.localizedDescription)
+                print(error)
                 completion(nil)
             }
-        }
+        }.resume()
     }
 }
