@@ -50,12 +50,19 @@ struct Driver: Decodable {
     let points: String
     let driverDetails: DriverDetails
     let constructors: [Constructor]
+    
+    var constructorString: String {
+        constructors.map { $0.name }.joined(separator: ", ")
+    }
 }
 
 struct DriverDetails: Decodable {
     let givenName: String
     let familyName: String
     let nationality: String
+    var fullName: String {
+        "\(givenName) \(familyName)"
+    }
 }
 
 struct Constructor: Decodable {

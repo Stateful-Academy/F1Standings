@@ -15,6 +15,7 @@
 		62ACE532284518150059D43A /* StandingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACE531284518150059D43A /* StandingsList.swift */; };
 		62ACE53528451F9B0059D43A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACE53428451F9B0059D43A /* NetworkService.swift */; };
 		62ACE538284527600059D43A /* DriverStandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACE537284527600059D43A /* DriverStandingsViewController.swift */; };
+		62ACE53B284530450059D43A /* DriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACE53A284530450059D43A /* DriverTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		62ACE531284518150059D43A /* StandingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsList.swift; sourceTree = "<group>"; };
 		62ACE53428451F9B0059D43A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		62ACE537284527600059D43A /* DriverStandingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStandingsViewController.swift; sourceTree = "<group>"; };
+		62ACE53A284530450059D43A /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		62ACE51A284501D40059D43A /* F1Standings */ = {
 			isa = PBXGroup;
 			children = (
+				62ACE53C2845304B0059D43A /* Custom Views */,
 				62ACE539284527660059D43A /* ViewControllers */,
 				62ACE53628451FAB0059D43A /* Model Controllers */,
 				62ACE5332845181D0059D43A /* Models */,
@@ -111,6 +114,14 @@
 				62ACE537284527600059D43A /* DriverStandingsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62ACE53C2845304B0059D43A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				62ACE53A284530450059D43A /* DriverTableViewCell.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62ACE51C284501D40059D43A /* AppDelegate.swift in Sources */,
+				62ACE53B284530450059D43A /* DriverTableViewCell.swift in Sources */,
 				62ACE538284527600059D43A /* DriverStandingsViewController.swift in Sources */,
 				62ACE532284518150059D43A /* StandingsList.swift in Sources */,
 				62ACE53528451F9B0059D43A /* NetworkService.swift in Sources */,

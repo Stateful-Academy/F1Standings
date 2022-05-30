@@ -19,7 +19,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iJu-I1-NmJ">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="139" id="AX8-pQ-yv6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DriverTableViewCell" rowHeight="139" id="AX8-pQ-yv6" customClass="DriverTableViewCell" customModule="F1Standings" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AX8-pQ-yv6" id="nfo-Og-mc8">
@@ -80,6 +80,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="constructorLabel" destination="xcD-b8-ed3" id="NYs-ud-qkm"/>
+                                            <outlet property="nameLabel" destination="dZZ-F3-P38" id="1jj-Sd-KrI"/>
+                                            <outlet property="nationalityLabel" destination="eae-nO-1hR" id="ydn-4k-joW"/>
+                                            <outlet property="pointsLabel" destination="zav-Br-phg" id="5ri-sM-skw"/>
+                                            <outlet property="rankLabel" destination="ctY-PS-jaY" id="cHC-Pe-CH8"/>
                                             <segue destination="6Le-NA-3xW" kind="show" identifier="toDriverDetails" id="lq4-4F-ICx"/>
                                         </connections>
                                     </tableViewCell>
